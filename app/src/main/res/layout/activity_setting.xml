@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <!--tools:context="com.vmokshagroup.dlnaplayer.activity.SettingActivity"-->
+    <!-- xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="40dp"-->
+
+
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/version_text"
+        style="@style/TextBoldStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_about_version"
+        android:textAllCaps="false"
+        android:textColor="#595757" />
+
+    <TextView
+        android:id="@+id/appversion_text"
+        style="@style/TextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+    <View
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="#C2C2C2"/>
+  <!--  android:paddingLeft="3dp"
+    android:paddingTop="3dp"-->
+</LinearLayout>

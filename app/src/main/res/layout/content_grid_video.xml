@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vmokshagroup.dlnaplayer.activity.GridVideoActivity"
+    tools:showIn="@layout/activity_grid_video">
+
+    <RelativeLayout
+        android:id="@+id/text_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="#D7D7D7">
+
+        <TextView
+            style="@style/TextNormalStyle"
+            android:id="@+id/video_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="Videos"
+            android:textColor="#424141"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            style="@style/TextNumber"
+            android:id="@+id/video_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/video_text"
+            android:textColor="#424141"
+            android:text="40"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_relative"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"/>
+</RelativeLayout>

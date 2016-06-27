@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_text">#333333</color>
+    <color name="light_text_color">#666666</color>
+    <color name="button">#5bdbb9</color>
+    <color name="rectangle_border">#999999</color>
+    <color name="white_color">#fff</color>
+    <color name="light_gray">#d9d7d7</color>
+    <color name="positive_button_color">#009f4b</color>
+    <color name="username_bg">#e2e2e2</color>
+    <color name="login_heading">#f6f5f9</color>
+
+    <color name="colorPrimary">#FF4867</color>
+    <color name="colorPrimaryDark">#FF4867</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darktext">#333333</color>
+    <color name="lighttext">#666666</color>
+    <color name="green_button">#5bdbb9</color> #5bdbb9
+    <color name="violet">#360773</color>
+    <color name="route1">#ec5899</color>
+    <color name="route2">#7fff00</color>
+    <color name="route3">#8000ff</color>
+    <color name="accent">#607D8B</color>
+    <color name="screen_background">#f4f3f8</color>
+    <color name="menu_background">#3a3a3a</color>
+    <color name="menu_text_color">#ffffff</color>
+    <color name="button_text_color">#ffffff</color>
+    <color name="marker_line">#f27f0d</color>
+
+    <color name="selected">#5bdbb9</color>
+    <color name="menu_button">#ffffff</color>
+    <color name="screen_bg">#f4f3f8</color>
+    <color name="menu_bg">#3a3a3a</color>
+    <color name="transparent">#00000000</color>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+<color name="negative_button">#fab713</color>
+    <color name="while_color">#FFFFFF</color>   <!-- <color name="transparent_color">#80FFFFFF</color>-->
+
+</resources>

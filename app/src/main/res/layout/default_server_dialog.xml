@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/forgotpwd_dialogbox"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/start_alert_message"
+        android:textColor="@color/dark_text"
+        android:textSize="18sp"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_title"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/light_gray" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/dialog_no_text"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_no_button"
+            android:text="@string/no_button_msg"
+
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+       <!-- style="@style/TextNormalStyle"-->
+        <Button
+            android:id="@+id/dialog_yes_text"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_yes_button"
+            android:text="@string/yes_button_msg"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

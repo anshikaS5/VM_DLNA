@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complete_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- xmlns:tools="http://schemas.android.com/tools"
+     tools:context="com.vmokshagroup.dlnaplayer.activity.VideoPlayerActivity"
+     tools:showIn="@layout/activity_video_player"-->
+
+    <!-- android:padding="5dp"
+     android:layout_centerInParent="true"
+     android:layout_centerVertical="true"
+     android:layout_centerHorizontal="true"
+     android:indeterminate="true"
+ -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progresser_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="visible" />
+
+
+    <!--android:layout_centerInParent="true"
+    android:layout_gravity="center"-->
+
+
+</RelativeLayout>

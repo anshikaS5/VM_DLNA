@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/frame_layout_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activity.MediaServerActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_toolbar"
+            android:fastScrollEnabled="true"/>
+
+        <ProgressBar
+            android:id="@+id/progresser_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/servers"
+            style="@style/TextNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Devices Found"
+            android:layout_below="@+id/wifi_warning"
+            android:visibility="gone"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            />
+
+        <TextView
+            android:id="@+id/wifi_warning"
+            style="@style/TextNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/info_no_wifi"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>
